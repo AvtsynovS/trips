@@ -2,10 +2,12 @@
   "name": "spoon",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://avtsynovs.github.io/trips",
   "scripts": {
     "start": "webpack serve --env development --mode development --config config/webpack.dev.ts",
     "build:dev": "webpack --config config/webpack.dev.ts",
     "build:prod": "webpack --config config/webpack.prod.ts",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -35,6 +37,7 @@
     "babel-loader": "^10.0.0",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "dotenv-webpack": "^8.1.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "terser-webpack-plugin": "^5.3.14",
     "url-loader": "^4.1.1",
